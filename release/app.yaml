@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: ingress-Controler
+  namespace: arc-k8s-demo
+spec:
+  releaseName: arc-k8s-demo
+  chart:
+    git: https://github.com/seitosan/fluxcd_bootstrap
+    ref: main
+    path: charts/nginx
+  values:
+    serviceName: arc-k8s-demo
