@@ -3,6 +3,7 @@ kind: HelmRelease
 metadata:
   name: ingress-Controler
   namespace: arc-k8s-demo
+  helmVersion: v3
 spec:
   releaseName: arc-k8s-demo
   chart:
