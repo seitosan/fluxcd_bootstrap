@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: ingresscontroler
-  namespace: ingress
+  namespace: kube-ops
   helmVersion: v3
 spec:
   releaseName: nginxic
