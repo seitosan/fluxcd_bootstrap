@@ -1,14 +1,14 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: ingress-Controler
-  namespace: arc-k8s-demo
+  name: ingresscontroler
+  namespace: ingress
   helmVersion: v3
 spec:
-  releaseName: arc-k8s-demo
+  releaseName: nginxic
   chart:
     git: https://github.com/seitosan/fluxcd_bootstrap
-    ref: main
+    ref: master
     path: charts/nginx
   values:
-    serviceName: arc-k8s-demo
+    serviceName: ingresscontroller
